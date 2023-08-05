@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="icon"
+      href="https://img.favpng.com/22/16/7/shopping-cart-icon-png-favpng-WzFfWAWJe97MmDVjyDJwr5Y69.jpg"
+    />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-8 cart">
+          <div class="title">
+            <div class="row">
+              <div class="col">
+                <h4 class="heading1">
+                  <b
+                    ><span class="heading_color">S</span>hopping
+                    <span class="heading_color">C</span>art</b
+                  >
+                </h4>
+              </div>
+              <div class="col align-self-center text-right text-muted">
+                <span class="total_item_number">3</span> items
+              </div>
+            </div>
+          </div>
+          <div class="row border-top border-bottom">
+            <div class="row main align-items-center">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="https://contents.mediadecathlon.com/p1901236/k$2836c12f148eea1c5e31429acfb405be/fitness-pure-cotton-t-shirt-sportee-black.jpg?format=auto&quality=40&f=800x800"
+                />
+              </div>
+              <div class="col">
+                <div class="row text-muted">Shirt</div>
+                <div class="row">Cotton T-shirt</div>
+                <small class="row">€ 50.00</small>
+              </div>
+              <div class="col">
+                <button class="btn_min">-</button>
+                <label class="quantity">1</label
+                ><button class="btn_plus">+</button>
+              </div>
+              <div class="col price">
+                &euro; <span class="prix">50.00</span>
+                <span>
+                  <button id="btn1" class="heart_btn">
+                    <i id="heart1" class="fa-solid fa-heart heart"></i>
+                  </button>
+                </span>
+                <span class="close">&#10005;</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="row main align-items-center">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="https://quizizz.com/_media/questions/65f81913-6295-4fdd-9903-44a121ececff_90_90"
+                />
+              </div>
+              <div class="col">
+                <div class="row text-muted">Shirt</div>
+                <div class="row">Cotton T-shirt</div>
+                <small class="row">€ 40.00</small>
+              </div>
+              <div class="col">
+                <button class="btn_min">-</button
+                ><label class="quantity">1</label
+                ><button class="btn_plus">+</button>
+              </div>
+              <div class="col price">
+                &euro; <span class="prix">40.00</span>
+                <span>
+                  <button id="btn2" class="heart_btn">
+                    <i id="heart2" class="fa-solid fa-heart heart"></i>
+                  </button>
+                </span>
+                <span class="close">&#10005;</span>
+              </div>
+            </div>
+          </div>
+          <div class="row border-top border-bottom">
+            <div class="row main align-items-center">
+              <div class="col-2">
+                <img
+                  class="img-fluid"
+                  src="https://m.media-amazon.com/images/I/61hEHkM-VPS._UX569_.jpg"
+                />
+              </div>
+              <div class="col">
+                <div class="row text-muted">Shirt</div>
+                <div class="row">Cotton T-shirt</div>
+                <small class="row">€ 35.00</small>
+              </div>
+              <div class="col">
+                <button class="btn_min">-</button
+                ><label class="quantity">1</label
+                ><button class="btn_plus">+</button>
+              </div>
+              <div class="col price">
+                &euro; <span class="prix">35.00</span>
+                <span>
+                  <button id="btn3" class="heart_btn">
+                    <i id="heart3" class="fa-solid fa-heart heart"></i>
+                  </button>
+                </span>
+                <span class="close">&#10005;</span>
+              </div>
+            </div>
+          </div>
+          <div class="back-to-shop">
+            <a href="#">&leftarrow;</a
+            ><span class="text-muted">Back to shop</span>
+          </div>
+        </div>
+        <div class="col-md-4 summary">
+          <div>
+            <h5><b>Summary</b></h5>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col" style="padding-left: 0">
+              ITEMS <span class="total_item_number">3</span>
+            </div>
+            <div class="col text-right">
+              &euro; <span class="total_price">125.00</span>
+            </div>
+          </div>
+          <form>
+            <p>SHIPPING</p>
+            <select>
+              <option class="text-muted">Standard-Delivery- &euro;5.00</option>
+            </select>
+            <p>GIVE CODE</p>
+            <input id="code" placeholder="Enter your code" />
+          </form>
+          <div
+            class="row"
+            style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 2vh 0"
+          >
+            <div class="col">TOTAL PRICE</div>
+            <div class="col text-right">
+              &euro; <span class="priceshipping">130.00</span>
+            </div>
+          </div>
+          <button class="btn glow-on-hover">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>
